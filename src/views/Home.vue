@@ -271,18 +271,12 @@ export default class Home extends Vue {
   wpm = localStorage.wpm || 0;
   errors = localStorage.errors || 0;
 
-  webhookUrl = localStorage.webhookUrl || "";
-
   startTime = 0;
   words: string[] = [];
-  wordsHTML = "";
   typedWord = "";
   typedWords: string[] = [];
 
   showOption = false;
-  showOtherOptions = false;
-
-  generatingWords = false;
   isFullWidth = false;
 
   get complexityOptions() {
