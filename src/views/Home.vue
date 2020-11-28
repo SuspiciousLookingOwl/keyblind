@@ -40,7 +40,7 @@
             <k-select-option
               label="Complexity"
               class="input-short"
-              v-model="testOptions.difficulty"
+              v-model.number="testOptions.difficulty"
               :options="complexityOptions"
             />
             <k-slider
@@ -48,7 +48,7 @@
               min="10"
               max="100"
               class="input-short"
-              v-model="testOptions.length"
+              v-model.number="testOptions.length"
             />
           </div>
 
@@ -58,7 +58,7 @@
               min="0"
               max="100"
               class="input-short"
-              v-model="testOptions.punctuationProbability"
+              v-model.number="testOptions.punctuationProbability"
               :preview="value => `${value}%`"
             />
             <k-slider
@@ -66,7 +66,7 @@
               min="0"
               max="100"
               class="input-short"
-              v-model="testOptions.capitalLetterProbability"
+              v-model.number="testOptions.capitalLetterProbability"
               :preview="value => `${value}%`"
             />
           </div>
@@ -286,11 +286,11 @@ export default class Home extends Vue {
         value: 1
       },
       {
-        label: this.testOptions.language === "phonetic" ? "Medium" : "800 Most Common Words",
+        label: this.testOptions.language === "phonetic" ? "Medium" : "200-800 Most Common Words",
         value: 2
       },
       {
-        label: this.testOptions.language === "phonetic" ? "High" : "1000 Most Common Words",
+        label: this.testOptions.language === "phonetic" ? "High" : "800-1000 Most Common Words",
         value: 3
       }
     ];
@@ -310,10 +310,10 @@ export default class Home extends Vue {
       /* Not found */
     }
     this.testOptions = {
-      difficulty: storedOptions?.difficulty ?? 1,
-      length: storedOptions?.length ?? 20,
-      capitalLetterProbability: storedOptions?.capitalLetterProbability ?? 0,
-      punctuationProbability: storedOptions?.punctuationProbability ?? 0,
+      difficulty: +(storedOptions?.difficulty ?? 1),
+      length: +(storedOptions?.length ?? 20),
+      capitalLetterProbability: +(storedOptions?.capitalLetterProbability ?? 0),
+      punctuationProbability: +(storedOptions?.punctuationProbability ?? 0),
       language: storedOptions?.language ?? "phonetic"
     };
   }

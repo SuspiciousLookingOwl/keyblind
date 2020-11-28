@@ -27,7 +27,7 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 
 interface Option {
   label: string;
-  value: string;
+  value: string | number;
 }
 
 @Component

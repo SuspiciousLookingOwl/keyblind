@@ -124,7 +124,7 @@ export const generateWords = ({
 
   let wordRange = [0, 199];
   if (difficulty === 2) wordRange = [200, 799];
-  if (difficulty === 3) wordRange = [800 - 999];
+  if (difficulty === 3) wordRange = [800, 999];
 
   for (let i = 0; i < length; i++) {
     let word = languageWords[language][generateRandomInteger(wordRange[0], wordRange[1])];
