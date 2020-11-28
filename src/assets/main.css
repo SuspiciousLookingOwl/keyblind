@@ -1,0 +1,108 @@
+body {
+    background-color: #292929;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.main-content {
+    min-height: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+    color: white;
+}
+
+.text-light {
+    color: #d1d1d1 !important;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+  
+.display-6 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-7 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-8 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-9 {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.word-display {
+    letter-spacing: 0.15rem;
+    line-height: 2.25rem;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.text-space {
+    color: rgba(108, 117, 125, 0.286) !important;
+}
+
+.border-space {
+    border-color: rgba(108, 117, 125, 0.286) !important;
+}
+
+.form-dark {
+    background-color: #3a3a3a;
+    color: #d1d1d1;
+}
+
+.form-dark:focus {
+    background-color: #3a3a3a;
+    color: #d1d1d1;
+    box-shadow: 0 1px 1px rgb(255, 255, 255, 0.1) inset, 0 0 8px rgb(255, 255, 255, 0.5);
+    border-color: #d1d1d1;
+}
+
+.bg-danger {
+    background-color: rgba(255, 61, 81, 0.467) !important;
+}
+
+.bg-success {
+    background-color: rgba(46, 255, 95, 0.467) !important;
+}
+
+.bg-secondary {
+    background-color: rgba(108, 117, 125, 0.467) !important;
+}
+
+
+.clickable {
+    cursor: pointer;
+}
+
+.footer {
+    min-height: 100;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.25s;
+}
+
+.fade-enter-active {
+  transition-delay: 0.25s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
