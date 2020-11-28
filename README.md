@@ -1,6 +1,6 @@
 # Keyblind
 
-A small typing practices website. Made for educational purposes.
+A simple typing practice website. Made for educational purposes.
 
 Made with:
 
