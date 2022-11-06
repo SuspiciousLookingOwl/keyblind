@@ -21,7 +21,9 @@ jobs:
               run: npm i
 
             - name: Build
-              run: npm run build
+              run: npm run build     
+              env:
+                BASE_URL: /keyblind/
 
             - name: Push
               uses: s0/git-publish-subdir-action@develop
