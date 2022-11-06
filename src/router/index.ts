@@ -14,7 +14,7 @@ const routes: Array<RouteConfig> = [
 
 const router = new VueRouter({
   mode: "history",
-  base: "/keyblind/",
+  base: process.env.BASE_URL,
   routes
 });
 
